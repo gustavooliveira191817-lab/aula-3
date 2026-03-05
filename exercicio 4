@@ -1,0 +1,24 @@
+//gustavo silva de oliveira exercicio 4
+import java.util.Scanner;
+
+public class MyClass {
+  public static void main(String args[]) {
+
+    Scanner e = new Scanner(System.in);
+
+    double n1, n2;
+
+    System.out.println("Informe o primeiro numero:");
+    n1 = e.nextDouble();
+
+    System.out.println("Informe o segundo numero:");
+    n2 = e.nextDouble();
+
+    if (n1 > n2) {
+        System.out.println("O " + n1 + " é maior que " + n2);
+    } else {
+        System.out.println("O " + n2 + " é maior que " + n1);
+    }
+
+  }
+}

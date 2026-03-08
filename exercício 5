@@ -1,0 +1,17 @@
+//gustavo silva de oliveira exercicio 4
+import java.util.Scanner;
+public class Main {
+    public static void main(String args[]) {
+        Scanner e = new Scanner(System.in);
+      System.out.println("informe um numero");
+      int n1 = e.nextInt();
+      if (n1>50 && n1<100) {
+          System.out.println("Pertece ao intervalo");
+
+      } else {
+          System.out.println("não pertence ao intervalo");
+      }
+       e.close();
+
+    }
+}

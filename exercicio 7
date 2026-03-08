@@ -1,0 +1,26 @@
+//gustavo silva de oliveira exercicio 7
+import java.util.Scanner;
+public class Main {
+    public static void main(String args[]) {
+
+        Scanner e = new Scanner(System.in);
+
+        System.out.println("Informe o salário:");
+        double salario = e.nextDouble();
+
+        System.out.println("Informe quantos anos trabalha na empresa:");
+        int anos = e.nextInt();
+
+        double bonus;
+
+        if (anos >= 5) {
+            bonus = salario * 0.20;
+        } else {
+            bonus = salario * 0.10;
+        }
+
+        System.out.println("O valor do bônus é: " + bonus);
+
+        e.close();
+    }
+}

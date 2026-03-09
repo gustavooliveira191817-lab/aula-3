@@ -1,0 +1,19 @@
+//gustavo silva de oliveira exercicio 8
+import java.util.Scanner;
+public class Main {
+    public static void main(String args[]) {
+     String senha =("R10p5");
+        Scanner e = new Scanner(System.in);
+        System.out.println("INFORME A SENHA ");
+        String tentativa = e.nextLine();
+        if (senha.equals(tentativa)) {
+           System.out.println("senha correta ");
+        } else {
+            System.out.println("acesso negado");
+        }
+
+
+
+        e.close();
+    }
+}

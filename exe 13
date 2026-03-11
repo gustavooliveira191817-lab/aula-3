@@ -1,0 +1,47 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+
+        Scanner e = new Scanner(System.in);
+
+        double n1, n2, resultado;
+        char op;
+
+        System.out.println("Digite o primeiro numero:");
+        n1 = e.nextDouble();
+
+        System.out.println("Digite o segundo numero:");
+        n2 = e.nextDouble();
+
+        System.out.println("Digite a operacao (+  -  *  /):");
+        op = e.next().charAt(0);
+
+        if (op == '+') {
+            resultado = n1 + n2;
+            System.out.println("Resultado: " + resultado);
+        }
+        else if (op == '-') {
+            resultado = n1 - n2;
+            System.out.println("Resultado: " + resultado);
+        }
+        else if (op == '*') {
+            resultado = n1 * n2;
+            System.out.println("Resultado: " + resultado);
+        }
+        else if (op == '/') {
+
+            if (n2 <= 0) {
+                System.out.println("Impossível dividir!");
+            } else {
+                resultado = n1 / n2;
+                System.out.println("Resultado: " + resultado);
+            }
+
+        }
+        else {
+            System.out.println("Sinal inválido");
+        }
+
+    }
+}

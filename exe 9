@@ -1,0 +1,25 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+
+        Scanner e = new Scanner(System.in);
+
+        double salario, prestacao, limite;
+
+        System.out.println("Digite o salario bruto:");
+        salario = e.nextDouble();
+
+        System.out.println("Digite o valor da prestacao:");
+        prestacao = e.nextDouble();
+
+        limite = salario * 0.30;
+
+        if (prestacao > limite) {
+            System.out.println("Empréstimo não pode ser concedido!");
+        } else {
+            System.out.println("Empréstimo pode ser concedido!");
+        }
+
+    }
+}

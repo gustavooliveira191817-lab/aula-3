@@ -1,0 +1,13 @@
+import java.util.Scanner;
+public class MyClass {
+  public static void main(String args[]) {
+  Scanner e=new Scanner(System.in);
+  System.out.println("digite um numero de 0 a 100");
+  int n1 = e.nextInt();
+  if(n1>20){
+     int nf = n1/2;
+      System.out.println(""+nf);
+  }
+      
+  }
+}
